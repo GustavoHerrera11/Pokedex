@@ -1,10 +1,16 @@
+// Modulo Pokemon
 var Pokemon = angular.module("Pokemon",[])
-// Modulo para mi pagina Web
-Pokemon.controller("pokedex", function($rootScope,$scope,$http){
-	$http({
-		method: "GET",
-		url: "https://pokeapi.co/api/v2/pokemon/35/"
-	}).then(function callbackSuccess(y){
-		console.log(y);
-	})
+// Controller Pokedex
+Pokemon.controller("Pokedex", function($rootScope,$scope,$http){
+	// Diccionario
+	$scope.PokedexB = [];
+	// Ciclo for
+	for (var i = 0; i < 100; i++) {
+		$http({
+			method: "GET",
+			url: "https://pokeapi.co/api/v2/pokemon/"+i
+		}).then(function callbackSuccess(y){
+			$scope.PokedexB.push(y);
+		})
+	}
 })
