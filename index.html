@@ -13,8 +13,16 @@
 	<!-- Controlador de script.js -->
 	<body ng-controller="Pokedex">
 
-		<div class="cuadro" ng-repeat="poke in PokedexB">
-			<p>{{poke.data.name}}</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<div ng-repeat="poke in PokedexB">
+						<br><br><br>
+						<p class="cuadro">{{poke.data.name}}</p>
+					</div>
+				</div>
+				<div class="col-md-10"></div>
+			</div>
 		</div>
 
 		<!-- Script de Angular.js -->
