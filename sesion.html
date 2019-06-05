@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html ng-app="Pokemon">
+<html>
 	<head>
 		<!-- Lenguaje -->
 		<meta charset="utf-8">
@@ -9,21 +9,40 @@
 		<link rel="stylesheet" href="css/style.css">
 		<!-- Icono de la pagina -->
 		<link rel="icon" href="img/icono4.jpg">
-		
-		<title>Pokedex</title>
-	</head>
-	<!-- Controlador de script.js -->
-	<body ng-controller="Pokedex">
 
-		<div class="container text-center">
-			<div class="row"><br><p class="titulo">Pokedex</p></div>
+		<title>Inicia Sesion</title>
+	</head>
+	<body>
+		
+		<div class="container">
 			<div class="row">
-				<div class="col-md-3 cuadro" ng-repeat="poke in PokedexB">
-						<img src="{{poke.data.sprites.front_default}}">
-						<p class="texto"><b>{{poke.data.name}}</b></p>
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<div class="datos">
+						<div class="regis text-center">
+							<h1>Inicia una Pokesesion</h1>
+						</div>
+						<br><br>
+						<div class="form">
+							<h2>Correo Electronico (e-mail):</h2>
+							<input type="text" name="correo" placeholder="someone@example.com" class="campo">
+						</div>
+						<br>
+						<div class="form">
+							<h2>Contraseña:</h2>
+							<input type="password" name="contraseña" class="campo">
+						</div>
+						<br><br>
+						<div class="registro text-center">
+							<input type="button" name="registrarse" value="Iniciar" onclick="location='index.html'" class="campo">
+						</div>
+						<br><br>
+					</div>
 				</div>
+				<div class="col-md-3"></div>
 			</div>
 		</div>
+
 
 		<!-- Enlace de Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">

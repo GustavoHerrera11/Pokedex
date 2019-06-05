@@ -20,6 +20,7 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
+/* Titulo "Pokedex" */
 .titulo{
 	color: white;
 	font-family: Broadway;
@@ -27,4 +28,26 @@ body{
 	border: solid 2px black;
 	background-color: gray;
 	border-radius: 50%;
+}
+.regis{
+	font-family: Broadway;
+	background-color: #0E2A7B;
+	color:white;
+}
+.datos{
+	background-color: gray;
+	opacity: 0.7;
+	border: solid 2px black;
+}
+.form{
+	font-family:Times New Roman;
+	font-size: 20px;
+	color: white;
+	margin: 12px;
+}
+.registro{
+	font-size: 20px;
+}
+.campo{
+	color: black;
 }
