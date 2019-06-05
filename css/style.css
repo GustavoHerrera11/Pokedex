@@ -1,4 +1,30 @@
-.cuadro{
-	border: solid 2px black;
+/* Cuadro nombre Pokemons */
+.texto{
+	border: solid 2px orange;
 	border-radius: 5px;
+	background: gray;
+	color: white;
+}
+/* Cuadro de pokemons */
+.cuadro{
+	border: solid 2px orange;
+}
+/* Imagen del Pokemon */
+img{
+	width: 200px;
+	height: 200px;
+}
+/* Fondo */
+body{
+	background-image:url("../img/fondo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.titulo{
+	color: white;
+	font-family: Broadway;
+	font-size: 40px;
+	border: solid 2px black;
+	background-color: gray;
+	border-radius: 50%;
 }
